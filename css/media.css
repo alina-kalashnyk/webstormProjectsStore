@@ -1,0 +1,70 @@
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+    .header .container ul {
+        display: block;
+        position: relative;
+        z-index: 100;
+    }
+    .header .container .logo, .heading-content .first-span, .heading-content .second-span {
+        margin-left: 40px;
+    }
+    .header .container .menu-icon {
+        margin-right: 40px;
+    }
+    .header .container .menu {
+        width: 100%;
+    }
+    .header .container ul li a{
+        margin-top: 10px;
+        text-align: center;
+    }
+    .header .container ul li a:last-child{
+        margin-bottom: 10px;
+    }
+    .body .body-images .body-row .body-column {
+        -ms-flex: 66%;
+        flex: 66%;
+        max-width: 66%;
+        margin: 0;
+    }
+    .body .body-images .body-row .body-column img{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .body .body-images .body-row {
+        margin-top: 13px;
+    }
+    .body .body-images .body-row .body-column:first-child {
+        padding-left: 15px;
+    }
+    .body .body-images .body-row .body-column:last-child {
+        padding-right: 15px;
+    }
+
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .body .body-images .body-row .body-column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+/* jjj*/
+@media (min-width: 768px) {
+    .header .container li {
+        float: left;
+    }
+    .header .container .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+    .header .container .menu-icon {
+        display: none;
+    }
+}

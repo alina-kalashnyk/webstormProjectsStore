@@ -1,0 +1,156 @@
+.carousel-nav {
+    position: relative;
+    bottom: 8.615%;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-indicator {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    width: 6px;
+    height: 6px;
+    margin: 11px;
+    cursor: pointer;
+    box-shadow: 0 0 0 6px #ffffff;
+}
+
+.carousel-indicator.current-slide {
+    box-shadow: 0 0 0 6px #000;
+}
+
+body, #slider, .wrap, .slide-content {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 80vh;
+    overflow-x: hidden;
+}
+
+.wrap {
+    position: relative;
+    overflow-y: hidden;
+}
+
+.slide {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slide1 {
+    background-image: url("../imgs/slide1.png");
+}
+
+.slide2 {
+    background-image: url("../imgs/slide2.png");
+}
+
+.slide3 {
+    background-image: url("../imgs/slide1.png");
+}
+
+.slide-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.first-span {
+    font-size: 2.25rem;
+    padding: 12px 44px;
+    color: white;
+    background-color: #000000;
+    text-transform: uppercase;
+}
+.second-span {
+    color: #000000;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-top: 38px;
+}
+
+.arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-top: -35px;
+    color: #ffffff;
+    height: 42px;
+    width: 42px;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+}
+.arrow:hover {
+    background-color: #000000;
+    border: 1px solid #000000;
+}
+.left-arrow {
+    margin-top: 5px;
+    margin-left: 8px;
+}
+.right-arrow {
+    margin-left: 12px;
+    margin-top: 5px;
+}
+
+#arrow-left {
+    left: 0;
+    margin-left: 30px;
+}
+
+#arrow-right {
+    right: 0;
+    margin-right: 30px;
+}
+
+.img-container {
+    position: relative;
+    margin-bottom: 36px;
+}
+
+.img-container a {
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    text-decoration: none;
+}
+
+.img-container a .add-to-cart, .img-container a .overlay {
+    opacity: 0;
+}
+
+.img-container a:hover .add-to-cart, .img-container a:hover .overlay {
+    display: block;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+}
+
+.img-container a:hover .add-to-cart {
+    font-size: 64px;
+    color: #ffffff;
+    z-index: 1000;
+    opacity: 1;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.img-container a:hover .overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: .7;
+}

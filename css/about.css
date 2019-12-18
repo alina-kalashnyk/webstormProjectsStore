@@ -1,0 +1,218 @@
+body {
+    background-color: #fafafa;
+}
+.heading {
+    position: relative;
+    width: 100%;
+    height: 256px;
+    background-color: #f0f0f2;
+    background-image: url("../imgs/about-heading.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+.heading:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to bottom, #b9b9bb, #fff);
+    opacity: .4;
+    z-index: 100;
+}
+
+.heading-content {
+    overflow: hidden;
+    position: relative;
+    padding-top: 80px;
+}
+
+.heading-content .first-span {
+    font-size: 2.25rem;
+    display: block;
+    width: max-content;
+    color: white;
+    background-color: #000000;
+    text-transform: uppercase;
+}
+
+.heading-content .second-span {
+    display: block;
+    width: max-content;
+    margin-top: 34px;
+    color: #000000;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+/* section body */
+.about-body {
+    background-color: #fafafa;
+    padding-bottom: 20px;
+}
+
+.about-body .about-our {
+    padding: 72px 0 26px;
+    height: 550px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.about-body .about-our .our-img {
+    float: left;
+    width: 46.6666666%;
+}
+
+.about-body .about-our .our-img .our-img-background {
+    position: relative;
+    height: 600px;
+    background-image: url("../imgs/about-our-img.png");
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    z-index: 100;
+}
+
+.about-body .about-our .our-experience {
+    float: right;
+    width: 46.6666666%;
+}
+
+.about-body .about-our .our-experience .our-skills {
+    margin-top: 1.625rem;
+}
+
+.story-title, .skills-title {
+    color: #212121;
+    font-size: 0.875rem;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+}
+.story-text {
+    text-align: justify;
+}
+
+.story-text p, .team-intro p {
+    font-weight: 600;
+    margin-top: 1.625rem;
+    line-height: 2;
+    color: #9a9a9a;
+    font-size: 0.625rem;
+}
+
+/* skills-bar */
+.skills-bar {
+    margin-top: 1.625rem;
+    height: 300px;
+    width: 100%;
+}
+
+.progress-bar {
+    margin: 0 0 10px;
+    overflow: hidden;
+    padding-right: 14px; /* Separate bars from container */
+}
+
+.progress-title-holder {
+    padding-bottom: 7px;
+    position: relative;
+    margin: 5px 0;
+    font-family: Montserrat, sans-serif;
+    font-size: 15px;
+    line-height: 15px;
+    font-weight: 400;
+    color: #2e2e2e;
+}
+
+.progress-title {
+    z-index: 100;
+}
+
+.progress-number-wrapper {
+    width: 100%;
+    z-index: 10;
+}
+
+.progress-number-mark {
+    margin-bottom: 4px;
+    background-color: rgb(22, 23, 29);
+    padding: 0 3px;
+    position: absolute;
+    bottom: 0;
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+}
+
+.progress-number-wrapper,
+.progress-number-mark {
+    font-family: Open Sans, sans-serif;
+    font-size: 11px;
+    line-height: 24px;
+    height: 24px;
+    margin-left: 14px;
+    letter-spacing: 0px;
+    font-style: normal;
+    text-transform: none;
+    color: #ffffff;
+}
+
+.down-arrow {
+    border-right: 6px solid transparent;
+    border-top: 6px solid #16171d;
+    position: absolute;
+    top: 100%;
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+}
+
+.progress-content-outter {
+    position: relative;
+    height: 8px;
+    background-color: #ebebeb;
+}
+
+.progress-content {
+    position: absolute;
+    margin-top: 3px;
+    margin-left: 3px;
+    height: 2px;
+    background-color: #a1a1a1;
+    width: 0%; /* Initial value */
+}
+.progress-border-circle {
+    margin-top: 2px;
+    position: absolute;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    width: 4px;
+    height: 4px;
+    box-shadow: 0 0 0 2px #000;
+    margin-left: 0%; /* Initial value */
+    z-index: 20;
+}
+/* section awesome-team */
+.team-title {
+    color: #212121;
+    font-size: 1.25rem;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+}
+.team-intro {
+    text-align: center;
+}
+.awesome-team {
+    padding: 70px 0;
+}
+.team-text {
+    padding: 0 8px;
+    text-align: center;
+    width: 53.947%;
+    margin: 0 auto;
+}
