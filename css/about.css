@@ -28,6 +28,7 @@ body {
 }
 
 .heading-content .first-span {
+    padding: 4px 20px;
     font-size: 2.25rem;
     display: block;
     width: max-content;
@@ -206,8 +207,6 @@ body {
 }
 .team-intro {
     text-align: center;
-}
-.awesome-team {
     padding: 70px 0;
 }
 .team-text {
@@ -215,4 +214,48 @@ body {
     text-align: center;
     width: 53.947%;
     margin: 0 auto;
+}
+.team-members {
+    margin: 0 auto 70px;
+    display: flex;
+    justify-content: space-between;
+}
+.team-members .team-member {
+    background-color: #eeeeee;
+    width: 30%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+}
+.team-members .team-member:nth-child(2) {
+    margin: 0 20px;
+}
+.team-members .team-member img {
+    padding-top: 10px;
+    display: block;
+    margin: 0 auto;
+    max-height: 400px;
+}
+.team-member-text {
+    padding: 30px 20px;
+    background-color: #ffffff;
+}
+.team-member-text .member-name {
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #152618;
+    margin-bottom: 6px;
+}
+.team-member-text .member-role {
+    color: #777777;
+    font-weight: 700;
+    font-size: 0.825rem;
+    margin-bottom: 18px;
+}
+.team-member-text span {
+    display: block;
+}
+.team-member-text p {
+    color: #a9a9a9;
+    font-size: 0.825rem;
 }
