@@ -199,6 +199,16 @@ body {
     z-index: 20;
 }
 /* section awesome-team */
+.awesome-team {
+    position: relative;
+}
+.awesome-team:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to top, #b9b9bb, #fff);
+}
 .team-title {
     color: #212121;
     font-size: 1.25rem;
@@ -216,9 +226,9 @@ body {
     margin: 0 auto;
 }
 .team-members {
-    margin: 0 auto 70px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 70px;
 }
 .team-members .team-member {
     background-color: #eeeeee;

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/791f041615.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/contacts.css">
+    <title>Contacts</title>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <a href="" class="logo">lian</a>
+        <input class="menu-btn" type="checkbox" id="menu-btn"/>
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+            <li><a href="">―</a></li>
+            <li><a href="index.html" class="active-page">home</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="#">portfolio</a></li>
+            <li><a href="#">blog</a></li>
+            <li><a href="#">contacts</a></li>
+            <li><a href="contacts.html"><i class="fas fa-search"></i></a></li>
+        </ul>
+    </div>
+</header>
+<section class="heading">
+    <div class="heading-background">
+        <div class="container heading-content">
+            <span class="first-span">get in touch</span>
+            <span class="second-span">contact us today</span>
+        </div>
+    </div>
+</section>
+<section id="map"></section>
+<section class="contacts-body">
+    <div class="our-values container">
+        <span class="our-values-title">awesome team</span>
+        <p class="our-values-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea exercitationem explicabo,
+            illo laborum nemo repudiandae sed. Accusamus eum fuga nemo optio quas quod tempore vitae. Ab debitis
+            eaque modi obcaecati odio quo saepe vel voluptatibus!</p>
+    </div>
+    <div class="our-value-list container">
+        <div class="our-value">
+                <img src="imgs/cont1.png" alt="Who we are">
+                <span class="member-name">who we are</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus eum fuga nemo optio quas quod tempore
+                    vitae. At cupiditate fuga iste!</p>
+        </div>
+        <div class="our-value">
+            <img src="imgs/cont2.png" alt="Our vision">
+                <span class="member-name">our vision</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus eum fuga nemo optio quas quod tempore
+                    vitae. At cupiditate fuga iste!</p>
+        </div>
+        <div class="our-value">
+            <img src="imgs/cont3.png" alt="Our mission">
+                <span class="member-name">our mission</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus eum fuga nemo optio quas quod tempore
+                    vitae. At cupiditate fuga iste!</p>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="footer-logo">lian</div>
+    <div class="social-media">
+        <div class="container">
+            <ul>
+                <li><i class="fab fa-facebook-f"></i></li>
+                <li><i class="fab fa-google-plus-g"></i></li>
+                <li><i class="fab fa-twitter"></i></li>
+                <li><i class="fab fa-linkedin-in"></i></li>
+                <li><i class="fab fa-dribbble"></i></li>
+                <li><i class="fab fa-pinterest"></i></li>
+                <li><i class="fab fa-instagram"></i></li>
+            </ul>
+        </div>
+    </div>
+    <div class="copyrights">© Copyrights 2019</div>
+</footer>
+<script>
+    function initMap() {
+        let coordinates = {lat: 51.500896, lng: -0.124593},
+            popupContent = '<div class="info-window-content"><span class="info-window-title">mulit x big wordpress theme</span><p class="info-window-text">London, Big Ben</p></div>',
+            map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 15,
+                scrollwheel: false,
+                center: coordinates
+            });
+            infowindow = new google.maps.InfoWindow({
+                 content: popupContent,
+                 position: new google.maps.LatLng(coordinates)
+            });
+        infowindow.open(map);
+    }
+
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJ8MwYuEts4GqusAGatzrOUI8GMxnMymI&callback=initMap"></script>
+
+</body>
+</html>
