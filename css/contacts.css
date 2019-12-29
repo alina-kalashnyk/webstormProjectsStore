@@ -1,6 +1,9 @@
 body {
     background-color: #fafafa;
 }
+.bold-font {
+    font-weight: 700;
+}
 
 .heading {
     position: relative;
@@ -50,7 +53,7 @@ body {
 #map {
     height: 300px;
     width: 100%;
-    filter: grayscale(1) brightness(1.1);
+    filter: grayscale(1);
 }
 
 /* customize infoWindow */
@@ -60,13 +63,16 @@ body {
     box-shadow: none !important;
     text-align: center;
 }
+
 .gm-style-iw button {
     top: -2px !important;
     right: -2px !important;
 }
+
 .info-window-content {
     padding: 14px;
 }
+
 .info-window-content .info-window-title {
     color: #000000;
     text-transform: uppercase;
@@ -87,10 +93,12 @@ body {
     letter-spacing: 0.5rem;
     text-transform: uppercase;
 }
+
 .our-values {
     text-align: center;
     padding: 70px 0;
 }
+
 .our-values-text {
     font-weight: 600;
     line-height: 2;
@@ -107,6 +115,7 @@ body {
     display: flex;
     justify-content: space-between;
 }
+
 .contacts-body:after {
     content: '';
     position: absolute;
@@ -114,15 +123,18 @@ body {
     height: 4px;
     background: linear-gradient(to top, #b9b9bb, #fff);
 }
+
 .our-value-list .our-value {
     width: 30%;
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: 0;
 }
+
 .our-value-list .our-value:nth-child(2) {
     margin: 0 20px;
 }
+
 .our-value-list .our-value img {
     display: block;
     width: 100%;
@@ -143,4 +155,114 @@ body {
     color: #777777;
     font-size: 0.825rem;
     line-height: 1.5rem;
+}
+
+.feedback {
+    margin-top: 50px;
+    margin-bottom: 56px;
+    overflow: hidden;
+}
+
+.feedback-details {
+    width: 34%;
+    display: block;
+    float: left;
+}
+.feedback-details .work-info {
+    color: #919191;
+    padding-bottom: 20px;
+}
+.feedback-details .work-number {
+    color: #555555;
+    padding-bottom: 10px;
+}
+.feedback-details p {
+    font-size: 0.825rem;
+}
+.feedback-details p span{
+    color: #000000;
+}
+.feedback-title {
+    display: block;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 1.425rem;
+    letter-spacing: 8px;
+}
+.feedback-slogan {
+    display: block;
+    color: #a1a1a1;
+    font-size: 0.9rem;
+    padding: 10px 0 14px;
+}
+.feedback-border {
+    display: block;
+    width: 54px;
+    height: 1px;
+    background-color: #000000;
+    margin-bottom: 20px;
+}
+
+.feedback-form {
+    width: 66%;
+    display: block;
+    float: right;
+}
+
+.row-input {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 24px;
+}
+
+.row-input .input-name, .row-input .input-email {
+    width: 48%;
+    display: block;
+}
+
+.row-input .input-name {
+    float: left;
+    font-style: italic;
+    padding: 6px;
+    color: #c2c2c2;
+    border: 1px solid #ebebeb;
+    border-left: 2px solid #afafaf;
+    background-color: #fafafa;
+}
+
+.row-input .input-email {
+    float: right;
+    font-style: italic;
+    font-size: 0.825rem;
+    padding: 6px;
+    color: #c2c2c2;
+    border: 1px solid #ebebeb;
+    background-color: #fafafa;
+}
+
+.input-message {
+    width: 100%;
+    font-size: 0.825rem;
+    background-color: #fafafa;
+    border: 1px solid #ebebeb;
+    padding: 6px;
+    height: 120px;
+}
+.input-message::placeholder {
+    color: #c2c2c2;
+    font-style: italic;
+}
+
+button {
+    text-transform: uppercase;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    font-size: 0.625rem;
+    font-weight: 700;
+    padding: 12px 40px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    margin-top: 24px;
 }
